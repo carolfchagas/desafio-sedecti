@@ -1,0 +1,93 @@
+
+body{
+	background-color: rgb(230,90,125)!important;
+}
+
+.main-text{
+	font-family: 'Sansita Swashed', cursive !important;
+	font-size: 30px;
+	color: white;
+	padding: 1% 0;
+}
+
+.main-text span{
+	font-style: italic;
+	font-size: 29px;
+	font-weight: 700;
+	font-family: 'Montserrat', sans-serif !important;
+}
+
+.main-form{
+	font-family: 'Montserrat', sans-serif;
+	background-color: rgb(255,241,244);
+	max-width: 450px!important;
+	box-shadow: 10px 10px 0 rgb(180,37,71);
+}
+
+.main-form h3{
+	padding-top: 10%;
+	font-size: 25px;
+	font-weight: 700;
+	color: rgb(208,45,83);
+}
+
+.form-group{
+	padding: 10% 0;
+}
+
+.gender{
+	padding: 2% 0;
+}
+
+label{
+	text-align: left;
+}
+
+
+label span{
+	font-size: 16px;
+	font-weight: 600;
+	color: rgb(171,37,68);
+}
+
+
+.registration{
+	max-width: 400px;
+	margin: 0 auto!important;
+}
+
+.requirements{
+	padding-top: 10%;
+	font-size: 14px;
+	text-align: left;
+	color: rgb(221,118,142);
+}
+
+.final-text{
+	font-family: 'Montserrat', sans-serif;
+	color: white;
+	font-weight: 300;
+	padding: 3% 0;
+}
+
+.valid{
+	font-weight: 500;
+	color: green;
+}
+.invalid{
+	font-weight: 500;
+	color: red;
+}
+
+input:not([type="submit"]) + .requirements{
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 1s ease-out;  
+}
+
+input:not([type="submit"]):hover + .requirements,
+input:not([type="submit"]):focus + .requirements,
+input:not([type="submit"]):active + .requirements{
+  max-height: 200px;
+  transition: max-height 1s ease-in;
+}
